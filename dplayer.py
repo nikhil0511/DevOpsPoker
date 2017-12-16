@@ -67,7 +67,7 @@ class PokerPlayerAPI(Resource):
     #         bid  : a number between 0 and max_bid
     def __get_bid(self, data):
 
-        return 0
+        return data['min_blind']
 
     # dispatch incoming get commands
     def get(self, command_id):
@@ -102,7 +102,7 @@ DevOps Poker Bot - usage instruction
 ------------------------------------
 python3 dplayer.py <team name> <port> <password>
 example:
-    python3 dplayer hexatechs 5001 gen7z
+    python3 dplayer username 5001 password
         """)
         return 0
 
