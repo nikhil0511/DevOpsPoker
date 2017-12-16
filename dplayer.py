@@ -78,7 +78,7 @@ class PokerPlayerAPI(Resource):
         if command_id == 'get_bid':
             return {'bid': self.__get_bid(data)}
         else:
-            return {}, 201
+            return {data['min_bid']}, 201
 
     # dispatch incoming put commands (if any)
     def put(self, command_id):
