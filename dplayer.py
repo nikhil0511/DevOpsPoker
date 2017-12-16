@@ -102,7 +102,7 @@ DevOps Poker Bot - usage instruction
 ------------------------------------
 python3 dplayer.py <team name> <port> <password>
 example:
-    python3 dplayer bazinga 40001 x407
+    python3 dplayer hexatechs 5001 gen7z
         """)
         return 0
 
